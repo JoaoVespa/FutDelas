@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passa a bola sprint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Futdelas</h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#futdelas">FutDelas</a></li>
+                    <li><a href="#jogadora">Cadastro de jogadora</a></li>
+                    <li><a href="#aulas-proximas">Aulas próximas</a></li>
+                    <li><a href="#peneiras-proximas">Peneiras próximas</a></li>
+                    <li><a href="#instituicao">Cadastro de Instituições</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#dia-a-dia">Dia a Dia</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção 1: futdelas -->
+    <section id="futdelas">
+        <div class="container">
+            <h2>FutDelas</h2>
+            <h3>Apoiamos, inspiramos e impulsionamos mulheres que sonham em construir sua carreira no futebol! </h3> 
+        </div>
+    </section>
+
+    <!-- cadastro jogadora -->
+<section id="jogadora">
+  <h2>Você jogadora, faça parte do FutDelas!</h2>
+  <p>Preencha o formulário abaixo e entre para o nosso time.</p>
+
+  <form action="/enviar-inscricao" method="POST">
+    <label for="nome">Nome completo:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="idade">Idade:</label><br>
+    <input type="number" id="idade" name="idade" required><br><br>
+
+    <label for="telefone">Telefone:</label><br>
+    <input type="tel" id="telefone" name="telefone" required><br><br>
+
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="cidade">Cidade:</label><br>
+    <input type="text" id="cidade" name="cidade" required><br><br>
+
+    <label for="posicao">Posição que joga:</label><br>
+    <select id="posicao" name="posicao" required>
+      <option value="">Selecione</option>
+      <option value="goleira">Goleira</option>
+      <option value="zagueira">Zagueira</option>
+      <option value="lateral">Lateral</option>
+      <option value="volante">Volante</option>
+      <option value="meia">Meia</option>
+      <option value="atacante">Atacante</option>
+    </select><br><br>
+
+    <input type="submit" value="Enviar inscrição">
+  </form>
+</section>
+
+
+    <!-- Seção 2: aulas proximas -->
+    <section id="aulas-proximas">
+       <h2>Aulas Próximas de você</h2>
+
+       <h3>Aqui você verá as aulas disponíveis na sua cidade depois de preencher o formulário.</h3>
+
+         <!-- Exemplo estático: -->
+      <ul>
+         <li>Treino aberto – Parque Central, Segunda às 18h</li>
+         <li>Clínica técnica – Estádio Municipal, Quinta às 20h</li>
+      </ul>
+
+    </section>
+
+    <!-- Seção 3: peneiras proximas -->
+    <section id="peneiras-proximas">
+       <h2>Peneiras Próximas de você</h2>
+  
+       <h3>Aqui você verá as peneiras disponíveis na sua cidade depois de preencher o formulário.</h3>
+
+        <!-- Exemplo estático: -->
+        <ul>
+          <li>Peneira Feminina – Clube Esportivo, Sábado às 9h</li>
+          <li>Seleção Regional – Centro de Treinamento, Domingo às 14h</li>
+        </ul>
+    </section>
+
+    <!-- Seção 4: formulario para instituicao -->
+    <section id="instituicao">
+        <h2>Cadastro de Instituições</h2>
+        <p>Instituições interessadas em apoiar o FutDelas, por favor, preencha o formulário abaixo.</p>
+
+        <form action="/enviar-instituicao" method="POST">
+          <label for="nome-instituicao">Nome da instituição:</label><br>
+          <input type="text" id="nome-instituicao" name="nome-instituicao" required><br><br>
+
+          <label for="cidade-instituicao">Cidade:</label><br>
+          <input type="text" id="cidade-instituicao" name="cidade-instituicao" required><br><br>
+
+          <label for="telefone-instituicao">Telefone de contato:</label><br>
+          <input type="tel" id="telefone-instituicao" name="telefone-instituicao" required><br><br>
+
+          <label for="email-instituicao">E-mail:</label><br>
+          <input type="email" id="email-instituicao" name="email-instituicao" required><br><br>
+
+          <input type="submit" value="Enviar cadastro">
+        </form>
+    </section>
+
+
+    <!-- Seção 5: Benefícios -->
+   <section id="quem-somos">
+       <h2>Quem Somos</h2>
+       <p>
+         No FutDelas, acreditamos que o futebol feminino merece mais espaço, oportunidades e visibilidade. Somos uma plataforma dedicada a apoiar e incentivar mulheres de todas as idades a iniciarem e desenvolverem suas carreiras no futebol.
+         Nosso objetivo é conectar jogadoras a aulas, treinamentos e peneiras próximas às suas cidades, facilitando o acesso a um esporte que transforma vidas e fortalece comunidades.
+         Trabalhamos em parceria com instituições esportivas, clubes e treinadores para criar uma rede de apoio sólida e inclusiva, que valoriza a força, a paixão e o talento das mulheres no futebol.
+         junte-se a nós e faça parte dessa revolução no esporte feminino. Aqui, o campo é delas, e o futuro também!
+       </p>
+   </section>
+
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; FutDelas</p>
+        </div>
+    </footer>
+</body>
+</html>
